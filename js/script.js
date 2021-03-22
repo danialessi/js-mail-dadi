@@ -3,7 +3,7 @@ var listaUtenti = ["pippo@gmail.com", "pluto@gmail.com", "paperino@gmail.com", "
 console.log(listaUtenti);
 
 
-Chiedi all’utente la sua email
+// Chiedi all’utente la sua email 
 var mailUtente = prompt("Ciao, inserisci la tua email");
 console.log(mailUtente);
 
@@ -12,7 +12,7 @@ console.log(mailUtente);
 for (var i = 0; i < listaUtenti.length; i++) {
     var mail = listaUtenti[i];
 
-    console.log(utenti);
+    console.log(mail);
 }
 
 
