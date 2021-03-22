@@ -1,20 +1,17 @@
 // Array Lista utenti di chi può accedere
 var listaUtenti = ["pippo@gmail.com", "pluto@gmail.com", "paperino@gmail.com", "topolino@gmail.com"];
-console.log(listaUtenti);
-
+console.log('lista utenti:', listaUtenti);
 
 // Chiedi all’utente la sua email 
 var mailUtente = prompt("Ciao, inserisci la tua email");
-console.log(mailUtente);
-
 
 // Controllare se l'utente fa parte della lista
 for (var i = 0; i < listaUtenti.length; i++) {
-    var mail = listaUtenti[i];
+    var utenteIncluso = listaUtenti[i];
+    
+    console.log('utente incluso:', utenteIncluso);
 
-    console.log(mail);
+    if (mailUtente == utenteIncluso) {
+        alert("Perfetto " + mailUtente + " puoi giocare!")
+    }
 }
-
-
-
-
