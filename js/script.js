@@ -13,9 +13,10 @@ var mailUtente = prompt("Ciao, inserisci la tua email");
 // ho bisogno della lista (listaUtenti) 
 // devo confrontare la mail utente con la lista e trovare un risultato, salvo il risultato in una variabile vuota che poi andrò a popolare
 
-var risultatoConfronto;
-
 for (var i = 0; i < listaUtenti.length; i++) {
+
+    var risultatoConfronto = false;
+
     // mail controllata in questo momento del ciclo 
     var thisEmail = listaUtenti[i];
     // console.log(listaUtenti[i])
@@ -25,7 +26,6 @@ for (var i = 0; i < listaUtenti.length; i++) {
         risultatoConfronto = true;
         alert("perfetto, puoi entrare");
     } else {
-        risultatoConfronto = false;
         alert("spiacente non sei nella lista");
     }
 }
